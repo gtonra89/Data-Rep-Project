@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1>Todo List</h1>
+<p class="lead"></p>
+
+<form action="" role="form" method="POST" name="add_task">
+	{{form.hidden_tag()}}
+	<p>
+		<h4>Please Enter a Task to be completed </h4>
+		{{form.label}}
+		<input type="submit" value="Submit" class="btn btn-default btn-md">
+		{% for error in form.errors.label %}
+		<span style="color: red;">{{ error }}</span>
+		{% endfor %}
+	</p>
+</form>
+
+
+{% for task in tasks %}
+  <li>{{ task.name }}</li>
+{% endfor %}
+
+{% endblock %}
