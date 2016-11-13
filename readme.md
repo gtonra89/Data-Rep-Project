@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-# Flask-python-Project
+Flask-python-Project
 3rd Year Software Development Project Semester 1 yr 3(Data Representation and Querying) GMIT
 =======
 <h1>TODO Flask-Python App</h1>
@@ -68,4 +67,3 @@ This web application runs in Python 3 using the Flask web micro-framework and us
 
 Python 3 and Flask were requirements for the project But Rethinkdb was my choice as its a very useful and user friendly database server
 to work with once it is setup
->>>>>>> 2c07b46ee3d153e57f90cb5cd5f4a48f5a3cee27
