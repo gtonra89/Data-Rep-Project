@@ -39,7 +39,8 @@ Download links for flask python 3 and rethinkdb see below:
 <br>link-->https://rethinkdb.com/docs/install/windows/
 <br>link-->https://www.rethinkdb.com/docs/install/osx/	   
 	   
-Then Download a zip version of project and unzipp 
+Then Download a zip version of project and unzipp
+<br>
 open cmd window and cd to the unzipped folder root
 
 to run the app type pthon run.py int the cmd prompt
