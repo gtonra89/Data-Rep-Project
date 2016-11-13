@@ -21,16 +21,23 @@ write documentation explaining how the application works, and write a short user
 <h6>How to run the application</h6>
 <br>
 <b>The following requirements are needed before you can run the application</b>
-1.download/install python3.5 or above
-2.install pip installer
-3.install flask and flask-wtf via pip command
-4.download and install Rethinkdb from the below link on your prefered OS
-link-->https://rethinkdb.com/docs/install/
+<br>1.download/install python3.5 or above
+<br>2.install pip installer
+<br>3.install flask and flask-wtf via pip command
+<br>4.download and install Rethinkdb from the below link on your prefered OS
+<br>
+Download links for flask python 3 and rethinkdb see below:
+
+<br>link-->https://www.python.org/downloads/ 
+<br>link-->http://flask.pocoo.org/
+<br>link-->https://rethinkdb.com/docs/install/
+
 
 <b>How to install rethink guide for the different OS types</b>
-link-->https://www.rethinkdb.com/docs/install/ubuntu/
-link-->https://rethinkdb.com/docs/install/windows/
-link-->https://www.rethinkdb.com/docs/install/osx/	   
+<br>
+<br>link-->https://www.rethinkdb.com/docs/install/ubuntu/
+<br>link-->https://rethinkdb.com/docs/install/windows/
+<br>link-->https://www.rethinkdb.com/docs/install/osx/	   
 	   
 Then Download a zip version of project and unzipp 
 open cmd window and cd to the unzipped folder root
@@ -40,37 +47,19 @@ to run the app type pthon run.py int the cmd prompt
 
 
 The application is written using the Flask library in Python 3 as well as rethinkdb 
-
-Both must be installed to run the project there is no need to create the database  as the Database will be generated once the application is run.
-
 <br>
-Download links for flask and python 3 see below:
-<br> 
-https://www.python.org/downloads/ <br>
-http://flask.pocoo.org/<br>
+ALL must be installed to run the project there is no need to create the database  as the Database will be generated once the application is run.
 <br>
 if you are still having problems installing these programs
 <br>
 I suggest you check out some video tutorials on how to install flask and python
 <br>
-<br>
-I used the sqlite3 package for persistence in the application. This must also be installed. However, no further configuration our setup 
-is required, as the database is fully contained in the db directory in this repository.
-<br>
 Once these prerequisites are installed, the application can be run locally:
-
-<b>python pinterest.py</b> 
-
 Once the application is running, it can be accessed by pointing your browser at http://127.0.0.1:5000/ 
-
-or via clicking on the browser button in pycharm
 
 <b>Architecture</b>
 
 This web application runs in Python 3 using the Flask web micro-framework and uses SQLite as a database. 
 
-Python 3 and Flask were requirements for the project,
-
-SQLite was my choice. 
-
-I chose SQLite as it is easy to use and does not require much setup to get the web application up and running.
+Python 3 and Flask were requirements for the project But Rethinkdb was my choice as its a very useful and user friendly database server
+to work with once it is setup
