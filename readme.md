@@ -1,6 +1,6 @@
 <h1>Flask-python-Project</h1>
-<br>3rd Year Software Development Project 
-<br>Semester 1 yr 3(Data Representation and Querying) GMIT
+<br><b>3rd Year Software Development Project 
+<br>Semester 1 yr 3(Data Representation and Querying) GMIT</b>
 
 <h2>TODO Flask-Python App</h2>
 
@@ -55,7 +55,7 @@ Then Download a zip version of project and unzip
 <br>
 <br>1.open cmd window and cd to the unzipped folder root
 <br>2.to run the program you must first start the rethikdb 
-<br>3.to do this you must cd into the folder where the rethinkdb.exe file is and run it via command prompt command "rethinkdb.exe"
+<br>3.to do this you must cd into the folder where the rethinkdb.exe file is and run it via command prompt
 <br>4.once the database is running it can be accessed by pointing your browser at http://127.0.0.1:8080/  
 <br>5.to run the app cd to the root of folder of the app in this case Flaskapp
 <br>6.type pthon run.py Once the application is running, it can be accessed by pointing your browser at http://127.0.0.1:5000/  
