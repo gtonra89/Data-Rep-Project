@@ -1,7 +1,8 @@
-Flask-python-Project
-3rd Year Software Development Project Semester 1 yr 3(Data Representation and Querying) GMIT
-=======
-<h1>TODO Flask-Python App</h1>
+<h1>Flask-python-Project</h1>
+<br>3rd Year Software Development Project 
+<br>Semester 1 yr 3(Data Representation and Querying) GMIT
+
+<h2>TODO Flask-Python App</h2>
 
 <h3><b>Data Representation and Querying GMIT Year3</b></h3>
 <br>
@@ -58,7 +59,7 @@ Then Download a zip version of project and unzip
 <br>4.once the database is running it can be accessed by pointing your browser at http://127.0.0.1:8080/  
 <br>5.to run the app cd to the root of folder of the app in this case Flaskapp
 <br>6.type pthon run.py Once the application is running, it can be accessed by pointing your browser at http://127.0.0.1:5000/  
-<br><b>NOTE rethinkdb & the run.py file have to run on a seperate cmd prompts</b> 
+<br><b>NOTE rethinkdb & the run.py file have to run on seperate cmd prompts</b> 
 
 <b>Architecture</b>
 
