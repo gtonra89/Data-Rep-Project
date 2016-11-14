@@ -21,6 +21,12 @@ write the software,
 
 write documentation explaining how the application works, and write a short user guide for it.
 
+The application is written using the Flask library in Python 3 as well as rethinkdb 
+<br>
+ALL must be installed to run the project there is no need to create the database  as the Database will be generated once the application is run.
+<br>
+if you are still having problems installing these programs
+
 <h6>How to run the application</h6>
 <br>
 <b>The following requirements are needed before you can run the application</b>
@@ -29,6 +35,7 @@ write documentation explaining how the application works, and write a short user
 <br>3.install flask and flask-wtf via pip command
 <br>4.download and install Rethinkdb from the below link on your prefered OS
 <br>
+
 Download links for flask python 3 and rethinkdb see below:
 
 <br>link-->https://www.python.org/downloads/ 
@@ -42,28 +49,20 @@ Download links for flask python 3 and rethinkdb see below:
 <br>link-->https://rethinkdb.com/docs/install/windows/
 <br>link-->https://www.rethinkdb.com/docs/install/osx/	   
 	   
-Then Download a zip version of project and unzipp
+	   
+Then Download a zip version of project and unzip 
 <br>
-open cmd window and cd to the unzipped folder root
-
-to run the app type pthon run.py int the cmd prompt
-
-
-
-The application is written using the Flask library in Python 3 as well as rethinkdb 
-<br>
-ALL must be installed to run the project there is no need to create the database  as the Database will be generated once the application is run.
-<br>
-if you are still having problems installing these programs
-<br>
-I suggest you check out some video tutorials on how to install flask and python
-<br>
-Once these prerequisites are installed, the application can be run locally:
-Once the application is running, it can be accessed by pointing your browser at http://127.0.0.1:5000/ 
+<br>1.open cmd window and cd to the unzipped folder root
+<br>2.to run the program you must first start the rethikdb 
+<br>3.to do this you must cd into the folder where the rethinkdb.exe file is and run it via command prompt command "rethinkdb.exe"
+<br>4.once the database is running it can be accessed by pointing your browser at http://127.0.0.1:8080/  
+<br>5.to run the app cd to the root of folder of the app in this case Flaskapp
+<br>6.type pthon run.py Once the application is running, it can be accessed by pointing your browser at http://127.0.0.1:5000/  
+<br><b>NOTE rethinkdb & the run.py file have to run on a seperate cmd prompts</b> 
 
 <b>Architecture</b>
 
-This web application runs in Python 3 using the Flask web micro-framework and uses SQLite as a database. 
+This web application runs in Python 3 using the Flask web micro-framework and uses Rethinkdb as a database. 
 
 Python 3 and Flask were requirements for the project But Rethinkdb was my choice as its a very useful and user friendly database server
 to work with once it is setup
