@@ -9,9 +9,9 @@
 	<p>
 		<h4>Enter a Post It</h4>
 		{{form.label}}
-		<input type="submit" value="ADD IT!" class="btn btn-default btn-md">
+		<input type="submit" value="ADD IT!" class="btn btn-primary btn-sm">
 		{% for error in form.errors.label %}
-		<span style="color: blue;">{{ error }}</span>
+		<span style="color: red;">{{ error }}</span>
 		{% endfor %}
 	</p>
 </form>

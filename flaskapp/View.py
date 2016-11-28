@@ -1,43 +1,48 @@
-from flask import render_template, url_for, redirect, g, request ##
+# flask g = Just store on this whatever you want. 
+#For example a database connection or the user that is currently logged in.
+#
+#To redirect a user to another endpoint eg a url, use the redirect(url_for(index) function;
+#
+from flask import render_template, g, url_for, redirect, request ##
 from flaskapp import flaskapp
 from flaskapp.Myforms import TODOFORM
-import json ##
+import json 
 
-# rethink imports
+# imports
 import rethinkdb as myDB
 from rethinkdb.errors import RqlRuntimeError, RqlDriverError
 
-# rethink config
-MY_HOST =  'localhost' 
-MY_PORT = 28015 
-MYDATABASE = 'todo'
+# configure Rethink
+MY_HOST =  'localhost' #host: the host to connect to (default localhost).
+MY_PORT = 28015 	   #port: the port to connect on (default 28015).
+MYDATABASE = 'mytable'    #db: the default database (default test).
 
-# db setup; only run once
+# db setup;
 def dbSetup():
-    connection = myDB.connect(host=MY_HOST, port=MY_PORT)
+    Database_connection = myDB.connect(host=MY_HOST, port=MY_PORT) #
     try:
-        myDB.db_create(MYDATABASE).run(connection)
-        myDB.db(MYDATABASE).table_create('todos').run(connection)
-        print('MYDATABASE setup has been completed')
+        myDB.db_create(MYDATABASE).run(Database_connection)
+        myDB.db(MYDATABASE).table_create('mytables').run(Database_connection)
+        print('The Database setup has been completed')
     except RqlRuntimeError:
-        print('The Database already exists.')
+        print('The Database is already Created.')
     finally:
-        connection.close()
+        Database_connection.close()
 dbSetup()
 
-# open connection before each request
+# before request open connection
 @flaskapp.before_request
 def before_request():
     try:
-        g.rdb_conn = myDB.connect(host=MY_HOST, port=MY_PORT, db=MYDATABASE)
+        g.rethinkdb_connection = myDB.connect(host=MY_HOST, port=MY_PORT, db=MYDATABASE)
     except RqlDriverError:
         abort(503, "Database connection could be established.")
 
-# close the connection after each request
+# after request close the connection
 @flaskapp.teardown_request
 def teardown_request(exception):
     try:
-        g.rdb_conn.close()
+        g.rethinkdb_connection.close()
     except AttributeError:
         pass
 
@@ -45,7 +50,7 @@ def teardown_request(exception):
 def index():
         form = TODOFORM()
         if form.validate_on_submit(): 
-                myDB.table('todos').insert({"name":form.label.data}).run(g.rdb_conn)
+                myDB.table('mytables').insert({"name":form.label.data}).run(g.rethinkdb_connection)
                 return redirect(url_for('index'))
-        MySelection = list(myDB.table('todos').run(g.rdb_conn))
+        MySelection = list(myDB.table('mytables').run(g.rethinkdb_connection))
         return render_template('index.html', form = form, tasks = MySelection)
