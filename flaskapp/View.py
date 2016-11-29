@@ -54,3 +54,7 @@ def index():
                 return redirect(url_for('index'))
         MySelection = list(myDB.table('mytables').run(g.rethinkdb_connection))
         return render_template('index.html', form = form, tasks = MySelection)
+
+@flaskapp.route('/about/')
+def about():
+    return render_template('about.html')

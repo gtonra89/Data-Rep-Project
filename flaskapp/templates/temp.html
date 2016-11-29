@@ -5,29 +5,51 @@
     <title>Post IT</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-    	.container{
+		body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+		.w3-navbar,h1,button {font-family: "Montserrat", sans-serif}
+    	
+		.container{
 			position: relative;
-			background-image: url(http://images.clipartbro.com/32/sticky-note-png-32848.png);
-			background-size: 600px 900px;
+			background-image: url(https://i.ytimg.com/vi/1WLvHgbhttU/maxresdefault.jpg);
+			background-size: 1000px 1000px;
 			background-repeat: no-repeat;
-			padding-top: 50px;
-			padding-left: 100px;
-    		max-width: 500px;
+			padding-top: -20px;
+    		max-width: 900px;
     	}
 		body{
-			background-image: url(http://4hdwallpapers.com/wp-content/uploads/2013/05/Board-Wood-Tree-Macro.jpg);
+			background-color: silver;
 			 background-size:cover;
 			padding-top: 50px;
 			padding-bottom: 100px;
     		max-width: 5000px;
 		}
     </style>
-  </head>
+	
+	<div class="w3-top">
+	  <ul class="w3-navbar w3-blue w3-card-2 w3-left-align w3-large">
+		<li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+		  <a class="w3-padding-large w3-hover-white w3-large w3-red"><i class="fa fa-bars"></i></a>
+		</li>
+	<p class="w3-medium w3-center">Data Representation & Querying Project<br>G00341908<br>Garret Tonra </p>
+	  </ul>
+	</div>
+	
+	<header class="w3-container w3-black w3-center w3-padding-20">
+  <br>
+  <br>
+  <p class="w3-small">Click Info Logo below for Info of App</p>
+    <a href="about" class="w3-hover-text-green" class="w3-hover-text-green"><i class="fa fa-info-circle fa-5x"></i></a>
+</header>
+</head>
+  
   <body>
-	<nav class="navbar navbar-inverse">
-		<p class="navbar-text">G00341908 Data Representation & Querying Project ------ Copyright © G00341908</p>
-	</nav>
+	<br>
+	<br>
   	<div class="container">
     	{% block content %}{% endblock %}
     </div>
