@@ -24,7 +24,7 @@ ALL must be installed to run the project there is no need to create the database
 <br>
 if you are still having problems installing these programs
 
-<h4><b>How to run the application<b></h4>
+<h4><b>How to run the application</b></h4>
 <b>The following requirements are needed before you can run the application</b>
 <br>1.download/install python3.5 or above
 <br>2.install pip installer
