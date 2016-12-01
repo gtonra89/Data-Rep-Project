@@ -18,7 +18,7 @@ write the software,
 
 write documentation explaining how the application works, and write a short user guide for it.
 
-The application is written using the Flask library in Python 3 as well as rethinkdb 
+The application is written using the Flask,Python 3,django as well as rethinkdb 
 <br>
 ALL must be installed to run the project there is no need to create the database  as the Database will be generated once the application is run.
 <br>
@@ -36,8 +36,8 @@ Download links for flask python 3 and rethinkdb see below:
 
 <br>link-->https://www.python.org/downloads/ 
 <br>link-->http://flask.pocoo.org/
+<br>link-->https://www.djangoproject.com/download/
 <br>link-->https://rethinkdb.com/docs/install/
-
 
 <b>How to install rethink guide for the different OS types</b>
 <br>
@@ -58,10 +58,10 @@ Then Download a zip version of project and unzip
 
 <b>Architecture</b>
 
-This web application runs in Python 3 using the Flask web micro-framework and uses Rethinkdb as a database. 
+This web application runs in Python 3 using the Flask web micro-framework,danjgo and  Rethinkdb as a database. 
 
-Python 3 and Flask were requirements for the project But Rethinkdb was my choice as its a very useful and user friendly database server
-to work with once it is setup
+Python 3 and Flask were requirements for the project But django & Rethinkdb were my choices as  in rethinkdb its a very useful and user friendly database server
+to work with once it is setup % django is useful for its template extending  services  
 
 <b>About App</b>
 
