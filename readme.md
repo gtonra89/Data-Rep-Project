@@ -73,3 +73,6 @@ The reason I chose this type App was it was relatively not to complex to impleme
 My Choice of DB was rethinkdb as it is very simplistic to implemnt and scale as well as that it has a very good API libary and documentation on its website 
 it is also an opensource database for realtime web apps and is useable on Most Operating Systems available</i></p>
 
+<b>References</b>
+I acid stripped a website template from w3schools for the nav bar and the header file --> http://www.w3schools.com/w3css/tryw3css_templates_start_page.htm#
+I also found the info,github and home buttons logos on this website here -->http://fontawesome.io/icons/#web-application 
