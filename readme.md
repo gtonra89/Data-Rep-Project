@@ -74,5 +74,5 @@ My Choice of DB was rethinkdb as it is very simplistic to implemnt and scale as 
 it is also an opensource database for realtime web apps and is useable on Most Operating Systems available</i></p>
 
 <b>References</b>
-I acid stripped a website template from w3schools for the nav bar and the header file --> http://www.w3schools.com/w3css/tryw3css_templates_start_page.htm#
-I also found the info,github and home buttons logos on this website here -->http://fontawesome.io/icons/#web-application 
+I acid stripped a website template from w3schools for the nav bar and the header file --> <br>http://www.w3schools.com/w3css/tryw3css_templates_start_page.htm#
+<br>I found the info,github and home buttons logos on this website here -->http://fontawesome.io/icons/#web-application 
