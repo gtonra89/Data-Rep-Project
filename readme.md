@@ -1,10 +1,6 @@
-<h1>Flask-python-Project</h1>
-<br><b>3rd Year Software Development Project 
-<br>Semester 1 yr 3(Data Representation and Querying) GMIT</b>
-
-<h2>TODO Flask-Python App</h2>
-
-<h3><b>Data Representation and Querying GMIT Year3</b></h3>
+<h1>Data Represntation & Querying Project Year 3 Semester 1 GMIT</h1>
+<br> 
+<h2>Post It App</h2>
 <br>
 This repository contains code and information for a third-year undergraduate project for the module Data Representation and Querying 
 That I am currently undertaking
@@ -67,3 +63,11 @@ This web application runs in Python 3 using the Flask web micro-framework and us
 
 Python 3 and Flask were requirements for the project But Rethinkdb was my choice as its a very useful and user friendly database server
 to work with once it is setup
+
+<b>About App</b>
+
+<p><i>The App that I chose to create using (python flask and rethinkdb) is a simple POST IT Sticky App. 
+The reason I chose this type App was it was relatively not to complex to implement and was something I had been thinking of doing on a different programming language in my spare time.
+My Choice of DB was rethinkdb as it is very simplistic to implemnt and scale as well as that it has a very good API libary and documentation on its website 
+it is also an opensource database for realtime web apps and is useable on Most Operating Systems available</i></p>
+
