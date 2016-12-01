@@ -8,16 +8,16 @@
 	{{form.hidden_tag()}}
 	<p>
 		<h4>Enter a Post It</h4>
-		{{form.label}}
+		{{form.label}}  <!--loads the form -->
 		<input type="submit" value="ADD IT!" class="btn btn-primary btn-sm">
-		{% for error in form.errors.label %}
-		<span style="color: red;">{{ error }}</span>
+		{% for error in form.errors.label %} 
+		<span style="color: red;">{{ error }}</span>   <!-- in the for error loop check to valiate no errors if input field black return error message on screen -->
 		{% endfor %}
 	</p>
 </form>
 
-{% for task in tasks %}
- <li><p style="color:red">{{ task.name }}</p></li>  
+{% for post in posts %} <!--  Loop over each item in an array. to display a list of post in  the posts list:-->
+ <li><p style="color:red">{{ post.name }}</p></li>  
 {% endfor %}
 
 

@@ -34,26 +34,27 @@ dbSetup()
 @flaskapp.before_request
 def before_request():
     try:
-        g.rethinkdb_connection = myDB.connect(host=MY_HOST, port=MY_PORT, db=MYDATABASE)
+        g.rethinkdb_connection = myDB.connect(host=MY_HOST, port=MY_PORT, db=MYDATABASE) # host ,port and db are all set to preset default values declared above 
     except RqlDriverError:
-        abort(503, "Database connection could be established.")
+        abort(503, "Database connection couldn't connect.") 
 
 # after request close the connection
 @flaskapp.teardown_request
 def teardown_request(exception):
     try:
-        g.rethinkdb_connection.close()
+        g.rethinkdb_connection.close() 
     except AttributeError:
         pass
 
+#index page main page 
 @flaskapp.route('/', methods = ['GET', 'POST'])
 def index():
-        form = TODOFORM()
-        if form.validate_on_submit(): 
-                myDB.table('mytables').insert({"name":form.label.data}).run(g.rethinkdb_connection)
-                return redirect(url_for('index'))
-        MySelection = list(myDB.table('mytables').run(g.rethinkdb_connection))
-        return render_template('index.html', form = form, tasks = MySelection)
+        form = TODOFORM() # instansiate form from MyForms.py
+        if form.validate_on_submit():  # if form is valid on submit 
+                myDB.table('mytables').insert({"name":form.label.data}).run(g.rethinkdb_connection) # insert into mytables form label and run the connection
+                return redirect(url_for('index')) # redirect to index.html url  
+        MySelection = list(myDB.table('mytables').run(g.rethinkdb_connection)) # list all thats in the database table(mytables) pass the list of strings to my selection variable
+        return render_template('index.html', form = form, posts = MySelection)
 
 @flaskapp.route('/about/')
 def about():
