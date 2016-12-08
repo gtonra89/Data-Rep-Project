@@ -5,14 +5,15 @@
 <br>
 <br>
 <form action="" role="form" method="POST" name="add_task">
+	<!--If your form has multiple hidden fields, you can render them in one block using hidden_tag().-->
 	{{form.hidden_tag()}}
 	<p>
 		<h4>Enter a Post It</h4>
 		{{form.label}}  <!--loads the form -->
 		<input type="submit" value="ADD IT!" class="btn btn-primary btn-sm">
+		<!-- in the for error loop check to valiate no errors if input field black return error message on screen -->
 		{% for error in form.errors.label %} 
-		<span style="color: red;">{{ error }}</span>   <!-- in the for error loop check to valiate no errors if input field black return error message on screen -->
-		{% endfor %}
+		<span style="color: red;">{{ error }}</span>	{% endfor %}
 	</p>
 </form>
 
