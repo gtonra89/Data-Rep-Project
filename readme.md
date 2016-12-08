@@ -6,7 +6,7 @@ This repository contains code and information for a third-year undergraduate pro
 That I am currently undertaking
 <br>
 <h4><b>Project Overview</b></h4> 
-I have decided to create a Single-Page Web Application (SPA) that is a simulation of a TODO List.
+I have decided to create a Single-Page Web Application (SPA) that is a simulation of a POST It.
 
 The project was guided by the following excerpt from the project instructions:
 
@@ -68,7 +68,7 @@ to work with once it is setup % django is useful for its template extending  ser
 
 <b>About App</b>
 
-<p><i>The App that I chose to create using (python flask and rethinkdb) is a simple POST IT Sticky App. 
+<p><i>The App that I chose to create using (python flask and rethinkdb) is a simple POST IT App. 
 The reason I chose this type App was it was relatively not to complex to implement and was something I had been thinking of doing on a different programming language in my spare time.
 My Choice of DB was rethinkdb as it is very simplistic to implemnt and scale as well as that it has a very good API libary and documentation on its website 
 it is also an opensource database for realtime web apps and is useable on Most Operating Systems available</i></p>
