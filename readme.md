@@ -49,14 +49,14 @@ Download links for flask python 3 and rethinkdb see below:
 Then Download a zip version of project and unzip 
 <br>
 <br>1.open cmd window and cd to the unzipped folder root
-<br>2.to run the program you must first start the rethikdb
+<br>2.to run the program you must first start the rethinkdb
 <br>3.to do this you must cd into the folder where the rethinkdb.exe file is and run it via command prompt
 <br>4.once the database is running it can be accessed by pointing your browser at http://127.0.0.1:8080/
 <br>5.to run the app cd to the root of folder of the app in this case Flaskapp
 <br>6.type pthon run.py Once the application is running, it can be accessed by pointing your browser at http://127.0.0.1:5000/
 <br>7.at http://127.0.0.1:5000/ you will see the main app page
-<br>8. you will see a simple post it webapp page simply enter what you want to post into the text =box and click the add it button on screen
-<br>9.once the button is clicked the data will be inserted into the dtatbase and outputted in a bulletpoint below on the screen 
+<br>8. you will see a simple post it webapp page simply enter what you want to post into the textbox and click the add it button on screen
+<br>9.once the button is clicked the data will be inserted into the database and outputted in a bulletpoint below on the screen 
 <br>10.once on this page you can click the Info Icon to get redirected to the about app page which will tell explain about my app as well as a Github link to my code 
 
 <b>Architecture</b>
